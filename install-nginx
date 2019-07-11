@@ -1,0 +1,3 @@
+after retrieving the tar.gz and license file from NGINX (img001), execute: 
+ubuntu@ip-10-1-1-7:~$ cd controller-installer/
+ubuntu@ip-10-1-1-7:~/controller-installer$ ./install.sh
