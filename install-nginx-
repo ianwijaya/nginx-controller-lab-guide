@@ -21,3 +21,11 @@ server {
       deny all;
   }
 }
+
+
+#install the controller-agent on NGINX PLUS. (follow the instruction from NGINX controller GUI)
+curl -k -sS -L https://ip-10-1-1-7:8443/1.4/install/controller/ > install.sh
+API_KEY='2004ae7c224e1050ec20724dd4d5832e' sh ./install.sh
+
+sudo service controller-agent status
+cat /var/log/nginx-controller/agent.log
